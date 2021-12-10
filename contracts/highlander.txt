@@ -1,0 +1,66 @@
+Game Mechanics
+
+Rarity Generator - On Chain
+- Finalize Attributes
+- Finalize Items
+- Map items with attack stat
+
+
+Image Render based on Rarity
+- Finalize assets/images
+- Store image and update content URI
+
+Minting Process
+- Finalize total number of nft
+- Finalize Prize Pool allocation and Treasury
+- Finalize Marketplace to list
+
+Match Making
+- Do we want real-time matches? Means both player must be active?
+- Do we pool active players who are interested to battle and then randomize a match? 
+- Which means nft will be locked before actual battle
+- Phases: Listed, Matched, 
+- Actions: List, Unlist
+- Once matched, Auto transfer NFT to battle contract
+- UI must update to notify player
+
+Battle
+- Generate BattleId
+- Finalize rounds? 
+- Finalize delays on different Phases
+- Phases: Battle Start, Roll Stats, Calculate Winner, Battle Completed
+
+- Roll Stats: Get random attack and defense, add it with NFT attributes.
+    - Create table for attack / defense name based on total attac/defense.
+    - ex: 
+        Attack Value 20 = Burning Sword Attack
+        Attack Value 21 = Super Burning Sword Attack
+        Attack Value 22 = Super Duper Burning Sword Attack
+
+        Defense Value 20 = Hard D!
+        Defense Value 21 = Harder D!
+    - We can have icons for each attack.
+    - Display icons on each side. 
+
+- Calculate Winner
+
+- Battle Completed: Losing NFT gets burned or sent to cemetery contract for revival with fee
+
+
+
+Revival
+
+
+
+Non-Technical
+- Marketing
+- Previews
+- Community Engagement
+- Roadmap
+
+
+Resource Needed
+- Solana Smart Contract Developer
+- Front- End Developer
+- Image Processing Developer (Generate Image based on rarity)
+- QA Developer
